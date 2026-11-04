@@ -1,0 +1,92 @@
+{
+  "radius": {
+    "min": 6.9,
+    "max": 28.2,
+    "step": 0.1,
+    "decimals": 1,
+    "median": 13.4,
+    "benign_median": 12.2,
+    "malignant_median": 17.3
+  },
+  "texture": {
+    "min": 9.7,
+    "max": 39.3,
+    "step": 0.1,
+    "decimals": 1,
+    "median": 18.8,
+    "benign_median": 17.4,
+    "malignant_median": 21.5
+  },
+  "perimeter": {
+    "min": 43.5,
+    "max": 188.5,
+    "step": 0.5,
+    "decimals": 1,
+    "median": 86.0,
+    "benign_median": 78.0,
+    "malignant_median": 114.0
+  },
+  "area": {
+    "min": 140.0,
+    "max": 2505.0,
+    "step": 5.0,
+    "decimals": 0,
+    "median": 550.0,
+    "benign_median": 460.0,
+    "malignant_median": 930.0
+  },
+  "smoothness": {
+    "min": 0.052,
+    "max": 0.164,
+    "step": 0.001,
+    "decimals": 3,
+    "median": 0.096,
+    "benign_median": 0.091,
+    "malignant_median": 0.102
+  },
+  "compactness": {
+    "min": 0.019,
+    "max": 0.346,
+    "step": 0.001,
+    "decimals": 3,
+    "median": 0.093,
+    "benign_median": 0.075,
+    "malignant_median": 0.132
+  },
+  "concavity": {
+    "min": 0.0,
+    "max": 0.427,
+    "step": 0.001,
+    "decimals": 3,
+    "median": 0.062,
+    "benign_median": 0.037,
+    "malignant_median": 0.151
+  },
+  "concave_points": {
+    "min": 0.0,
+    "max": 0.202,
+    "step": 0.001,
+    "decimals": 3,
+    "median": 0.034,
+    "benign_median": 0.023,
+    "malignant_median": 0.086
+  },
+  "symmetry": {
+    "min": 0.106,
+    "max": 0.304,
+    "step": 0.001,
+    "decimals": 3,
+    "median": 0.179,
+    "benign_median": 0.171,
+    "malignant_median": 0.19
+  },
+  "fractal_dimension": {
+    "min": 0.0495,
+    "max": 0.0975,
+    "step": 0.0005,
+    "decimals": 4,
+    "median": 0.0615,
+    "benign_median": 0.0615,
+    "malignant_median": 0.0615
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "dataset": {
+    "name": "Breast Cancer Wisconsin (Diagnostic)",
+    "rows": 569,
+    "malignant": 212,
+    "benign": 357,
+    "features": 10,
+    "train_rows": 455,
+    "test_rows": 114
+  },
+  "seed": 42,
+  "threshold": 0.5,
+  "folds": 5,
+  "cv": {
+    "Logistic Regression": {
+      "roc_auc": {
+        "mean": 0.9849329205366356,
+        "std": 0.005684391890163205
+      },
+      "accuracy": {
+        "mean": 0.9296703296703297,
+        "std": 0.01785502946073838
+      },
+      "precision": {
+        "mean": 0.8973427208721327,
+        "std": 0.03164877593881035
+      },
+      "recall": {
+        "mean": 0.9176470588235295,
+        "std": 0.022009749333964365
+      },
+      "f1": {
+        "mean": 0.9071359100896942,
+        "std": 0.023004225702614494
+      }
+    },
+    "SVM": {
+      "roc_auc": {
+        "mean": 0.9868937048503612,
+        "std": 0.006912033869820572
+      },
+      "accuracy": {
+        "mean": 0.9428571428571428,
+        "std": 0.014578570507056687
+      },
+      "precision": {
+        "mean": 0.9339041335009076,
+        "std": 0.010105469253057825
+      },
+      "recall": {
+        "mean": 0.911764705882353,
+        "std": 0.04159451654038516
+      },
+      "f1": {
+        "mean": 0.9221659413482906,
+        "std": 0.021363138593378486
+      }
+    },
+    "Random Forest": {
+      "roc_auc": {
+        "mean": 0.9836429308565531,
+        "std": 0.009060981543550412
+      },
+      "accuracy": {
+        "mean": 0.945054945054945,
+        "std": 0.012037858406706946
+      },
+      "precision": {
+        "mean": 0.9303511352230519,
+        "std": 0.026192163682787536
+      },
+      "recall": {
+        "mean": 0.9235294117647059,
+        "std": 0.03989605872426629
+      },
+      "f1": {
+        "mean": 0.9260063483938705,
+        "std": 0.01697928116874478
+      }
+    },
+    "XGBoost": {
+      "roc_auc": {
+        "mean": 0.9864809081527348,
+        "std": 0.0063816820779113445
+      },
+      "accuracy": {
+        "mean": 0.945054945054945,
+        "std": 0.006950060791578866
+      },
+      "precision": {
+        "mean": 0.9353859541359542,
+        "std": 0.024663698378305968
+      },
+      "recall": {
+        "mean": 0.9176470588235294,
+        "std": 0.028817526385684456
+      },
+      "f1": {
+        "mean": 0.9257617163860594,
+        "std": 0.009783815696467793
+      }
+    }
+  },
+  "skipped": {},
+  "selected_model": "SVM",
+  "test": {
+    "roc_auc": 0.9847883597883598,
+    "accuracy": 0.956140350877193,
+    "precision": 0.9302325581395349,
+    "recall": 0.9523809523809523,
+    "specificity": 0.9583333333333334,
+    "f1": 0.9411764705882353,
+    "confusion_matrix": [
+      [
+        69,
+        3
+      ],
+      [
+        2,
+        40
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "top_features": [
+    {
+      "feature": "texture",
+      "importance": 0.034226190476190466
+    },
+    {
+      "feature": "concave_points",
+      "importance": 0.023181216931216907
+    },
+    {
+      "feature": "concavity",
+      "importance": 0.013591269841269843
+    },
+    {
+      "feature": "radius",
+      "importance": 0.011507936507936505
+    },
+    {
+      "feature": "area",
+      "importance": 0.011193783068783075
+    },
+    {
+      "feature": "perimeter",
+      "importance": 0.010069444444444436
+    },
+    {
+      "feature": "smoothness",
+      "importance": 0.00962301587301585
+    },
+    {
+      "feature": "fractal_dimension",
+      "importance": 0.0013888888888888506
+    },
+    {
+      "feature": "compactness",
+      "importance": 0.0003968253968253899
+    },
+    {
+      "feature": "symmetry",
+      "importance": 3.30687830687626e-05
+    }
+  ],
+  "versions": {
+    "scikit_learn": "1.9.1",
+    "python": "3.12.10"
+  }
+}
